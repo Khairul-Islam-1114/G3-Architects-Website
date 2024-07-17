@@ -19,9 +19,7 @@ body {
     display: flex;
 }
 
-section{
-    margin-top: 50px;
-}
+
 
 .gray{
     color: rgba(66, 66, 66, 1);
@@ -146,6 +144,39 @@ main {
     font-weight: bold;
 }
 
+#some-facts{
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.some-fact-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.facts-card-container{
+    margin-top: 25px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fact-card{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #FF900E;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.fact-name{
+    color: rgba(66, 66, 66, 1)
+}
+
 @media screen and (max-width: 576px) {
     nav{
         flex-direction: column;
@@ -172,5 +203,12 @@ main {
 
     .team-img-container img{
         width: 100%;
+    }
+
+    .facts-card-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 }
