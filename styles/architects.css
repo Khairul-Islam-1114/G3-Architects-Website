@@ -144,7 +144,7 @@ main {
     font-weight: bold;
 }
 
-#some-facts{
+#some-facts, #sponsors{
     width: 90%;
     margin: 50px auto;
 
@@ -175,6 +175,30 @@ main {
 
 .fact-name{
     color: rgba(66, 66, 66, 1)
+}
+
+.sponsor-title{
+    text-align: center;
+    font-size: 45;
+    font-weight: bold;
+}
+
+.sponsor-description{
+    text-align: center;
+    color: rgba(114, 114, 114, 1);
+
+}
+
+.sponsors-img-container{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sponsors-img-container > img{
+    filter: grayscale(100%);
 }
 
 @media screen and (max-width: 576px) {
@@ -210,5 +234,15 @@ main {
         justify-content: center;
         align-items: center;
         gap: 10px;
+    }
+
+    .sponsors-img-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .sponsors-img-container > img{
+        width: 6rem;
     }
 }
