@@ -5,41 +5,172 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared Styles */
+
+.display-flex {
+    display: flex;
+}
+
+section{
+    margin-top: 50px;
+}
+
+.gray{
+    color: rgba(66, 66, 66, 1);
+
+}
+
+.orange{
+    color: rgba(255, 144, 14, 1);
+
+}
+
+/* navbar styles */
+nav {
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
     margin: auto;
 }
 
-
-/* Shared Styles */
-
-.display-flex{
-    display: flex;
-}
-
-/* navbar styles */
-nav{
-justify-content: space-between;
-align-items: center;
-}
-
-.brand{
-font-size: 45px;
-font-weight: bold;
-color: rgba(19, 19, 19, 1);
+.brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(19, 19, 19, 1);
 
 }
 
-nav > ul{
+nav>ul {
     gap: 30px;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: rgba(66, 66, 66, 1);
     font-size: 18px;
     font-weight: 500;
+}
+
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Banner styles */
+
+.banner, .teams{
+    width: 90%;
+    margin: auto;
+}
+
+.banner-content{
+    width: 50%;
+    margin: 50px auto;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+.banner-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(19, 19, 19, 1);
+}
+
+.banner-description{
+    text-align: center;
+    color: rgba(114, 114, 114, 1);
+}
+
+.banner button{
+    display: block;
+    width: fit-content;
+   
+}
+
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px auto;
+
+}
+
+
+
+/* Teams Section Styles */
+
+main {
+    margin: 75px auto;
+}
+
+.teams{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.feature-title{
+    font-size: 2.5rem;
+
+}
+
+#span1{
+    font-weight: 500;
+}
+
+#span2{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0px 0px ;
+    }
+
+    .banner-content{
+        width: 100%;
+    }
+
+    .banner-title{
+        font-size: 3rem;
+    }
+
+    .teams{
+        flex-direction: column;
+    }
+
+    .team-img-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-img-container img{
+        width: 100%;
+    }
 }
